@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetImage">
+
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/ivView"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:text="拍照"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:text="从相册选取图片"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/take_button"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/button"/>
+    <Button
+        android:text="点击进入背景音乐界面"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/take_button"/>
+
+
+</android.support.constraint.ConstraintLayout>
